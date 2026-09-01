@@ -1,0 +1,20 @@
+@use "./Lib.scss";
+#root,body {
+  margin: 0 !important;
+  padding: 0 !important;
+  isolation: isolate;
+  position: relative;
+  &,*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+  }
+  h1,h2,h3,p{&,*{
+    margin: 0 !important;
+  }}
+  width: 100%;
+  &::selection {
+    background: #fff;
+    color: #050505;
+  }
+}

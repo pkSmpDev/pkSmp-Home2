@@ -1,0 +1,59 @@
+@mixin fullOccupy($z:1,$p:fixed) {
+  position: $p;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  height: 100dvh;
+  width: 100dvw;
+  z-index: $z;
+}
+@mixin fullOccupyAlt($z:1,$p:fixed) {
+  position: $p;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  z-index: $z;
+}
+@mixin bgDefault {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+@mixin bgDefaultForced {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  object-fit: cover !important;
+}
+@mixin bgContain {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  object-fit: contain;
+}
+@mixin rowWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  // flex-wrap: wrap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+@font-face {
+  font-family: "Title";
+  src: url("/fonts/Minecrafter.Reg.ttf");
+}
+@font-face {
+  font-family: "Title Alt";
+  src: url("/fonts/Minecrafter.Alt.ttf");
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url("/fonts/Minecraft.ttf");
+}
+@font-face {
+  font-family: "Minecraft Items";
+  src: url("/fonts/minecraft-items.ttf");
+}
