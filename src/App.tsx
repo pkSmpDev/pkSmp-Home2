@@ -16,8 +16,12 @@ const App=():ReactElement=>{
       {/* <motion.h1 className='items'>ab<br/>cd</motion.h1> */}
       <motion.div className='fade'></motion.div>
     </motion.header>
-    <motion.section className='s2'>
-      
+    <motion.section className='s1'>
+      <motion.div className="sectionWrapper">
+        <motion.div className='rowItem'>
+          
+        </motion.div>
+      </motion.div>
     </motion.section>
   </>);
 }
