@@ -19,7 +19,7 @@ const App=():ReactElement=>{
     <motion.section className='s1'>
       <motion.div className="sectionWrapper">
         <motion.div className='rowItem'>
-          
+          {/* <FontAwesomeIcon icon={}/> */}
         </motion.div>
       </motion.div>
     </motion.section>
