@@ -78,7 +78,7 @@ section {
   justify-content: center;
   flex-direction: column;
   &.s1{
-    height: 30dvh;
+    height: 35dvh;
     flex-direction: column !important;
     .sectionWrapper {
       height: calc(100% - 2rem);
@@ -100,6 +100,19 @@ section {
         justify-content: center;
         flex-direction: column;
         // background: green;
+        .icon {
+          font-size: 6.5rem;
+          color: #fff;
+        }
+        span {
+          font-size: 1.25rem;
+          text-wrap: wrap;
+          text-align: center;
+          word-break: keep-all;
+          color: #f0f0f0;
+          margin-top: 1rem;
+          font-family: 'Funnel Display';
+        }
       }
     }
   }

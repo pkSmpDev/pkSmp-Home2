@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { useState, type ReactElement } from 'react';
 import "./Style/Home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartArea, faCircleNodes, faHexagonNodesBolt } from "@fortawesome/free-solid-svg-icons";
+import { faChartArea, faCircleNodes, faHexagonNodesBolt, faMessage } from "@fortawesome/free-solid-svg-icons";
 import { faClock, faCloud } from "@fortawesome/free-regular-svg-icons";
 const App=():ReactElement=>{
   return(<>
@@ -19,7 +19,8 @@ const App=():ReactElement=>{
     <motion.section className='s1'>
       <motion.div className="sectionWrapper">
         <motion.div className='rowItem'>
-          {/* <FontAwesomeIcon icon={}/> */}
+          <FontAwesomeIcon className={"icon"} icon={faMessage}/>
+          <motion.span>Active Community</motion.span>
         </motion.div>
       </motion.div>
     </motion.section>
